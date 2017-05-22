@@ -11,7 +11,6 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 templates = Environment(
     loader=PackageLoader('nbrequests', 'templates')
 )
-print(templates.list_templates())
 
 
 def display_request(r):
