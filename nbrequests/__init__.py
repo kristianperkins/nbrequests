@@ -5,9 +5,6 @@ from IPython.display import display_html, display_javascript
 from jinja2 import Environment, PackageLoader
 
 
-from jinja2 import Environment, PackageLoader, select_autoescape
-
-
 __all__ = ['display_request']
 
 
@@ -22,5 +19,6 @@ def display_request(r):
     html = templates.get_template('requests.html')
     display_html(html.render(r=r, rq_id=rq_id, rs_id=rs_id), raw=True)
     js_template = templates.get_template('requests.js')
-    display_javascript(js_template.render(r=r, rq_id=rq_id, rs_id=rs_id), raw=True)
-
+    display_javascript(
+            js_template.render(r=r, rq_id=rq_id, rs_id=rs_id),
+            raw=True)
