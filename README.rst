@@ -1,5 +1,5 @@
 nbrequests: Display Python Requests in Notebook
-===============
+===============================================
 
 Pretty printing the requests/responses from `python requests <http://requests.readthedocs.io>`_.
 
