@@ -1,4 +1,4 @@
-nbrequests: Display Python Requests in Jupyter Notebook
+nbrequests: Display Python Requests in Notebook
 ===============
 
 Pretty printing the requests/responses from `python requests <requests.readthedocs.io>`_
