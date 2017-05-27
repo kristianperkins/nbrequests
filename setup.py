@@ -5,7 +5,7 @@ setup(
     name='nbrequests',
     author='Kristian Perkins',
     author_email='khperkins@gmail.com',
-    version='0.0.5',
+    version='0.0.6',
     url='http://github.com/kristianperkins/nbrequests',
     py_modules=['nbrequests'],
     packages=['nbrequests'],
