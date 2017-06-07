@@ -5,11 +5,17 @@
         width: 100%;
     }
     div.dr-request-{{rq_id}} {
-        border: 1px solid {{ color }};
+        background-color: {{ color }};
+        color: white;
         display: flex;
+        height: 20px;
+    }
+    div.dr-request-{{rq_id}} pre {
+        color: white;
     }
     div.dr-request-method-{{rq_id}} {
-        border-right: 1px solid {{ color }};
+        background-color: {{ color }};
+        color: white;
         text-align: center;
         flex: 0 0 50px;
     }
