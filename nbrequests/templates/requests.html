@@ -49,14 +49,14 @@
     </div>
     {% if r.request.method != 'GET' %}
         <h4>Request</h4>
-        <div id="{{rq_id}}" style="max-height: 600px; width:100%;">
+        <div id="{{rq_id}}" style="width:100%;">
           {% if r.request.headers['Content-Type'] != 'application/json' %}
             <pre>{{r.request.body|default('Empty Request', true)}}</pre>
           {% endif %}
         </div>
     {% endif %}
     <h4>Response</h4>
-    <div id="{{rs_id}}" style="max-height: 600px; width:100%;">
+    <div id="{{rs_id}}" style="width:100%;">
       {% if r.headers['Content-Type'] != 'application/json' %}
         <pre>{{r.text|default('Empty Response', true)}}</pre>
       {% endif %}
