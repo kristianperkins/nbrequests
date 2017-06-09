@@ -16,6 +16,8 @@ Usage
 
 Make a request using the python `requests` module and run `display_request()`.  e.g.
 
+::
+
     r = requests.get('http://httpbin.org/get')
     display_request(r)
 
